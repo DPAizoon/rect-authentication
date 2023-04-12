@@ -25,8 +25,10 @@ function App() {
       <h1>Application</h1>
       <BrowserRouter>
         <Routes>
+        <Route path="/" element={<Dashboard />}> </Route>
           <Route path="/dashboard" element={<Dashboard />}> </Route>
           <Route path="/preferences" element={<Preferences />}> </Route>
+          <Route path="*" element={<p>There's nothing here: 404!</p>} />
         </Routes>
       </BrowserRouter>
     </div>
