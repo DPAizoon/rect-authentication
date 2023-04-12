@@ -17,7 +17,17 @@ function App() {
   const { token, setToken } = useToken();
 
   if(!token) {
-    return <Login setToken={setToken} />
+    return (
+      <div className="wrapper">
+        <h1>Application</h1>
+        <BrowserRouter>
+          <Routes>
+            <Route path="*" element={<Login setToken={setToken} />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    );
+    
   }
 
   return (
