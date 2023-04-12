@@ -1,4 +1,4 @@
-# Ract-Authentication
+# Rect-Authentication
 React Authentication  With Token
 
 Documentation from [Link] (https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications#step-2-creating-a-token-api).
